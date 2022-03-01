@@ -28,7 +28,7 @@
   color: white;
 }
 .buttons {
-  margin: 1rem;
+  margin: 2rem 1rem;
 }
 button {
   margin: 1rem;
@@ -39,4 +39,16 @@ button {
 }
 p {
   font-size: 1.2rem;
+}
+.footer {
+  margin: 3rem 1rem;
+  display: flex;
+  font-size: 1.2rem;
+}
+a {
+  text-decoration: none;
+}
+.github {
+  font-size: 2.5rem;
+  margin: 0 0.5rem;
 }

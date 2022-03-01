@@ -2,6 +2,8 @@ import { useSelector } from "react-redux";
 import "./App.css";
 import { useDispatch } from "react-redux";
 import * as actionTypes from "./store/action";
+import { FaGithub } from "react-icons/fa";
+
 function App() {
   const myState = useSelector((state) => state.counter);
   const dispatch = useDispatch();
@@ -49,11 +51,20 @@ function App() {
       <div className="buttons">
         <button onClick={plusHandler}>Add</button>
         <button onClick={minusHandler}>Minus</button>
-        <button onClick={addFive}>Add Five</button>
-        <button onClick={removeFive}>Remove Five</button>
-
+        <button onClick={removeFive}> + Five</button>
+        <button onClick={addFive}> - Five</button>
         <button onClick={reset}>Reset</button>
       </div>
+
+      <a
+        href="https://github.com/meanjula"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="footer"
+      >
+        <p>Anjula Timsina &copy; 2021</p>
+        <FaGithub className="github" />
+      </a>
     </div>
   );
 }
