@@ -9,9 +9,9 @@ const reducer = (state = initialState, action) => {
     case actionTypes.DECREASE:
       return { ...state, counter: state.counter - 1 };
     case actionTypes.ADD_FIVE:
-      return { ...state, counter: state.counter + 5 };
+      return { ...state, counter: state.counter + action.playload };
     case actionTypes.REMOVE_FIVE:
-      return { ...state, counter: state.counter - 5 };
+      return { ...state, counter: state.counter - action.playload };
     case actionTypes.RESET:
       return { counter: initialState.counter };
     default:

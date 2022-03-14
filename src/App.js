@@ -26,14 +26,14 @@ function App() {
     e.preventDefault();
     dispatch({
       type: actionTypes.REMOVE_FIVE,
-      playload: myState,
+      playload: 5,
     });
   };
   const addFive = (e) => {
     e.preventDefault();
     dispatch({
       type: actionTypes.ADD_FIVE,
-      playload: myState,
+      playload: 5,
     });
   };
   const reset = (e) => {
@@ -51,8 +51,8 @@ function App() {
       <div className="buttons">
         <button onClick={plusHandler}>Add</button>
         <button onClick={minusHandler}>Minus</button>
-        <button onClick={removeFive}> + Five</button>
-        <button onClick={addFive}> - Five</button>
+        <button onClick={addFive}> + Five</button>
+        <button onClick={removeFive}> - Five</button>
         <button onClick={reset}>Reset</button>
       </div>
 
